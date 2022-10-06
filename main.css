@@ -77,4 +77,11 @@ body,html{
     top: 0;
     right: 0;
     cursor: pointer;
-  }
+}
+.deleteAll{
+    border: 2px solid red;
+}
+.deleteAll:hover {
+    background-color: red;
+    color: white;
+}

@@ -56,6 +56,14 @@ function display() {
         a[i].innerText = elements[i];
     }
 }
+function clean_() {
+    let elems = Array.from(document.getElementsByClassName("card"));
+    elems.forEach(a => {
+        a.remove();
+    })
+    elements = [];
+    localStorage.setItem("elements", JSON.stringify(elements));
+}
 
 main_content.addEventListener('click', (target) => {
     if(target.path[0].className === "close"){
@@ -66,3 +74,5 @@ main_content.addEventListener('click', (target) => {
         localStorage.setItem("elements", JSON.stringify(elements));
     }
 })
+
+
