@@ -1,0 +1,80 @@
+body,html{
+    margin:0;
+    height:100vh;
+    overflow-y: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: 100%;
+    width: 89%;
+    float: left;
+    border: 2px solid black;
+}
+.right_block{
+    width: 9%;
+    height: 100%;
+    float: right;
+    border: 2px solid black;
+}
+.header{
+    background-color:#A1C298;
+    padding:1%;
+    color:white;
+    display: flex;
+}
+.main-content{
+    flex:1;
+    background-color:white;
+    overflow-y: scroll;
+}
+.footer{
+    background-color:#A1C298;
+    padding:1%;
+    color:white;
+}
+.btns {
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black;
+    border: 2px solid #256D85;
+}
+  
+.btns:hover {
+    background-color: #256D85;
+    color: white;
+}
+.card{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    border: 2px solid black;
+}
+.card > div{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.close:before {
+    content: '✕';
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
